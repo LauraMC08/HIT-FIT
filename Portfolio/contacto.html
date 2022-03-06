@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/estilo.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../Images/logo1.png">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+        <img src="../Images/logo1.png" alt="Gym" class=logogym>
+        <h1>HIT FIT</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Principal</a></li>
+            <li><a href="../Portfolio/tienda.html">Tienda</a></li>
+            <li><a href="../Portfolio/inscripcion.html">Inscripción</a></li>
+            <li><a href="../Portfolio/contacto.html">Nosotros</a></li>
+        </ul>
+    </nav>
+
+        <div id="maps">
+
+        <main> 
+            <article>
+                <h2>Contacta con nosotros</h2>
+                <form action="enviar.jsp" method="post" id="formu">
+                    <label for="nombre">Nombre<input id="nombre" name="nombre" type="text" class="dato" placeholder="Nombre"></label>
+                    <label for="apellidos">Apellidos<input type="text" id="apellidos" name="apellidos" class="dato" placeholder="Apellidos"></label>
+                    <label for="telefono">Telefono<input type="tel" id="telefono" name="telefono" class="dato" placeholder="Telefono"></label>
+                    <label for="email">Email<input type="email" id="email" name="email" class="dato" placeholder="Email"></label>
+                    <label class="checkcopyright"><input type="checkbox" name="copyright" id="copyright" class="check"> He leído y acepto la política de privacidad</label>
+                    <div id="form_group_enviar">
+                        <input type="submit" name="enviar" class="button">
+                    </div>
+                </form>
+            </article>
+        </main>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4062730469386!2d-3.6582102846670383!3d40.44414407936199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f31e9e62d2b%3A0x90b93099b978f3e8!2sBasic-Fit!5e0!3m2!1ses!2ses!4v1645785638387!5m2!1ses!2ses">
+            </iframe>
+
+        </div>
+
+        <div id="personal">
+            <h2>Quiénes somos</h2>
+
+            <p>Detrás de Hit Fit hay un grupo de profesionales apasionados y amantes del deporte 
+                que quieren transmitir la forma que tienen de verlo a sus clientes.
+                Concienciando a todos la importancia de la práctica deportiva para la salud, 
+                tanto física como mental, creando comunidad y haciendo que la gente se sienta en casa. 
+                Creciendo tanto deportivamente como en sus objetivos físicos con el paso de los meses 
+                y celebrando los logros de sus alumnos como si fueran los suyos propios.
+            </p>
+
+            <div class="entrenadores">
+        
+                <img src="../Images/E1.png" alt="entrenador1" id="e1">
+                <h3>Vanesa</h3>
+                <p>Carácter fuerte pero al mismo tiempo es una persona empática y generosa. Muy profesional, 
+                    disciplinada y trabajadora, con un ojo minucioso en la técnica de los movimientos. 
+                    Empujándote y acompañándote a donde creías que jamás podrías llegar.
+                </p>
+
+            </div>
+            
+            <div class="entrenadores">
+
+                <img src="../Images/E2.png" alt="entrenador2" id="e2">
+                <h3>Daniel</h3>
+                <p>Encargado de enseñar a los reyes de la casa, nuestros Crosskids. Es una persona muy 
+                    atenta, paciente, con un carácter dulce y tiene una mano especial para los niños, 
+                    haciendo sus clases entretenidas y dinámicas.
+                </p>
+
+            </div>
+
+            <div class="entrenadores">
+
+                <img src="../Images/E3.png" alt="entrenador3" id="e3">
+                <h3>Lucía</h3>
+                <p>Será la encargada de impartir las clases de Yoga. Es una actividad muy beneficiosa 
+                    para la mejora de la movilidad en nuestra disciplina a través de técnicas que ella 
+                    os enseñará. Estamos convencidos de que logrará que veáis estas clases como 
+                    imprescindibles en vuestro calendario semanal. 
+                </p>
+
+            </div>
+
+        </div>
+
+    <footer>
+        <address>
+        <a href="https://www.iesjuanbosco.es/">IES Juan Bosco</a>
+        <p>Av. de la Constitución, 48</p>
+        <p>HORARIO</p>
+        <p>Lunes a viernes de 7:00 a 22:00</p>
+        <p>Domingos y festivos cerrado</p>
+        </address>
+    </footer>
+
+    <button onclick="scrollWin()" style="position:fixed;bottom:20px;right:20px;height:68px;width:104px;"><img src="../Images/flecha.png" alt="flecha"></button>
+    <script>
+        function scrollWin(){
+            window.scrollTo(0, 0);
+        }
+    </script>
+    
+</body>
+</html>

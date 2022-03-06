@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: burlywood;
+}
+header{
+    background-image: url(../Images/cabecera.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    padding: 3%;
+    background-color: burlywood;
+}
+header h1{
+    color: rgb(114, 0, 0);
+    font-family: bebas Neue;
+    font-size: 5rem;
+    text-shadow: -1px 3px black;
+    position: absolute;
+}
+section{
+    padding-top: 1em;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: #333;
+    padding: 0;
+}
+nav li a{
+    color: lightyellow;
+    font-family: teko;
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 0.1rem;
+}
+.logogym{
+    position: relative;
+    right: 34em;
+    width: 10em;
+}
+footer{
+    display: flex;
+    text-align: center;
+    font-size: 100%;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+footer a{
+    color: white;
+}
+#index_footer{
+    position: relative;
+    margin-top: 7.8em;
+}
+.tabla{
+    background-color:cornsilk;
+    font-family: Fjalla One;
+    font-size: 1.5em;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: 50%;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.categoria{
+    background-color: rgb(114, 0, 0);
+    font-size: 2em;
+    text-shadow:3px 3px white;
+}
+.fila{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+.tipo, .descripcion{
+    width: 50%;
+    text-align: center;
+    padding:20px;
+    border: 1.5px solid darkred;
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.tipo{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-items: center;
+
+}
+.fotoproducto{
+    display: flex;
+    justify-content: center;
+    max-width: 20rem;
+    max-height: 13rem;
+    left: auto;
+}
+#index{
+    background-color: burlywood;
+}
+.cajas > *{
+    border-radius: 4px;
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    padding: 0.8rem;
+    text-align: center;
+    margin-top: 2em;
+}
+.cajas{
+    display: grid;
+    gap: 0.8rem;
+    grid-template: 
+        "yoga" 400px
+        "crossfit" 400px
+        "halterofilia" 400px
+        "cardio" 400px
+        "spinning" 400px;
+}
+#img_index{
+    width: 30em;
+    height: 16em;
+    position: relative;
+    left: 22em;
+    bottom: 15em;
+}
+#img_index1{
+    width: 26em;
+    height: 17em;
+    position: relative;
+    left: 22em;
+    bottom: 16em;
+}
+#img_index2{
+    width: 27em;
+    height: 18em;
+    position: relative;
+    left: 22em;
+    bottom: 13em;
+}
+#img_index3{
+    width: 27em;
+    height: 18em;
+    position: relative;
+    left: 22em;
+    bottom: 16em;
+}
+#img_index4{
+    width: 33em;
+    height: 18em;
+    position: relative;
+    left: 24em;
+    bottom: 15em;
+}
+#uno{
+    display: flex;
+    width: 42em;
+    margin-top: 3em;
+    margin-left: 1em;
+    font-size: 1.1em;
+    font-family: Raleway;
+}
+#dos{
+    display: flex;
+    width: 42em;
+    margin-top: 3em;
+    margin-left: 2em;
+    font-size: 1.1em;
+    font-family: Raleway;
+}
+#tres{
+    display: flex;
+    width: 42em;
+    margin-top: 5em;
+    margin-left: 2em;
+    font-size: 1.1em;
+    font-family: Raleway;
+}
+#cuatro{
+    display: flex;
+    width: 42em;
+    margin-top: 5em;
+    margin-left: 2em;
+    font-size: 1.1em;
+    font-family: Raleway;
+}
+#cinco{
+    display: flex;
+    width: 42em;
+    margin-top: 5em;
+    margin-left: 2em;
+    font-size: 1.1em;
+    font-family: Raleway;
+}
+#yoga,#crossfit,#halterofilia,#cardio,#spinning{
+    left: 40em;
+    height: 24em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: bisque;
+}
+main{
+    padding: 1.2rem;
+    border: solid rgb(114, 0, 0);
+    background-color:bisque;
+    margin-top: 2em;
+    height: 322px;
+}
+#maps{
+    display: flex;
+    place-content: space-evenly;
+}
+div iframe{
+    margin-top: 2em;
+    width: 330px;
+    height: 320px;
+}
+#personal{
+    margin-top: 2em;
+    border-style: outset;
+    margin-left: 7.25em;
+    margin-right: 7.25em;
+    margin-bottom: 2em;
+    text-align: center;
+    border-color: rgb(114, 0, 0);
+    background-color: bisque;
+    font-family: Raleway;
+}
+.entrenadores{
+    display: grid;
+    text-align: -webkit-center;
+    padding: 1em;
+}
+#e1,#e2,#e3{
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 3%;
+}
+label{
+    display: block;
+    font-size: 1.2rem;
+}
+input.dato{
+    width: 90%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 2rem;
+    line-height: 2rem;
+}
+input.dato:focus{
+    border: 3px solid #0075FF;
+    box-shadow: 3px 0 38px rgba(163,163,163,0.4);
+    outline: none;
+}
+.checkcopyright,#form_group_enviar{
+    grid-column: span 2;
+}
+#form_group_enviar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+input[type="submint"]{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    width: 30%;
+    margin: 1em;
+    font-size: 1.2em;
+}
+fieldset.inscripcion{
+    border: black solid;
+    background-color: blanchedalmond;
+}
+.ins{
+    line-height: 2em;
+}
+.video{
+    width: 560px;
+    height: 315px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-top: 0px;
+}
+@media screen and (max-width: 480px){
+    body{
+        height: 100%;
+        width: 100%;
+        background-color: burlywood;
+    }
+    header{
+        background-image: url(../Images/cabecera.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 59em;
+        padding: 3%;
+        background-color: burlywood;
+    }
+    header h1{
+        color: rgb(114, 0, 0);
+        font-family: bebas Neue;
+        font-size: 7rem;
+        text-shadow: -1px 3px black;
+        position: absolute;
+        width: 3em;
+        left: 3em;
+
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        background-color: #333;
+        padding: 0;
+        width: 59em;
+    }
+    footer{
+        display: flex;
+        text-align: center;
+        font-size: 100%;
+        justify-content: space-around;
+        background-color: #333;
+        color: white;
+        position: absolute;
+        width: 59em;
+    }
+    #index_footer{
+        position: relative;
+        margin-top: 10.8em;
+        width: 60em;
+    }
+    #inscripcion{
+        margin-top: 24em;
+    }
+    #maps{
+        display: flex;
+        place-content: space-evenly;
+        margin-left: 4em;
+        width: 49em;
+    }
+    div iframe{
+        margin-top: 2em;
+        width: 330px;
+        height: 320px;
+        margin-left: 3em;
+    }
+    #personal{
+        margin-top: 2em;
+        border-style: outset;
+        margin-left: 4.25em;
+        margin-right: 7.25em;
+        margin-bottom: 2em;
+        text-align: center;
+        border-color: rgb(114, 0, 0);
+        background-color: bisque;
+        font-family: Raleway;
+        width: 49em;
+    }
+    form.inscrip{
+        display: flex;
+        gap: 4rem;
+        width: 57em;
+        flex-direction: column;
+        margin-top: 3em;
+    }
+    .video{
+        width: 43em;
+        height: 30em;
+        margin-left: 4em;
+        margin-bottom: -16em;
+        margin-top: 3em;
+    }
+    .tabla{
+        background-color:cornsilk;
+        font-family: Fjalla One;
+        font-size: 1.5em;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        border-collapse: collapse;
+        width: 37em;
+        margin-left: 1em;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    .cajas{
+        display: grid;
+        gap: 16.8rem;
+        grid-template: 
+            "yoga" 400px
+            "crossfit" 400px
+            "halterofilia" 400px
+            "cardio" 400px
+            "spinning" 400px;
+    }
+    #yoga,#crossfit,#halterofilia,#cardio,#spinning{
+        left: 40em;
+        height: 39em;
+        margin-left: 4.25em;
+        background-color: bisque;
+    }
+    #uno{
+        width: 42em;
+        margin-top: 1em;
+        margin-left: 1em;
+        font-size: 1.1em;
+        font-family: Raleway;
+        display: flex;
+        flex-direction: column;
+    }
+    #img_index{
+        left: 15em;
+        position: absolute;
+        bottom: -5em;
+    }
+    #dos{
+        display: flex;
+        flex-direction: column;
+        width: 42em;
+        margin-top: 1em;
+        margin-left: 2em;
+        font-size: 1.1em;
+        font-family: Raleway;
+    }
+    #img_index1{
+        position: absolute;
+        left: 17em;
+        bottom: -46em;
+    }
+    #tres{
+        display: flex;
+        flex-direction: column;
+        width: 42em;
+        margin-top: 3em;
+        margin-left: 2em;
+        font-size: 1.1em;
+        font-family: Raleway;
+    }
+    #img_index2{
+        position: absolute;
+        left: 17em;
+        bottom: -88em;
+    }
+    #cuatro{
+        display: flex;
+        flex-direction: column;
+        width: 42em;
+        margin-top: 3em;
+        margin-left: 2em;
+        font-size: 1.1em;
+        font-family: Raleway;
+    }
+    #img_index3{
+        position: absolute;
+        left: 17em;
+        bottom: -130em;
+    }
+    #cinco{
+        display: flex;
+        flex-direction: column;
+        width: 42em;
+        margin-top: 3em;
+        margin-left: 2em;
+        font-size: 1.1em;
+        font-family: Raleway;
+    }
+    #img_index4{
+        position: absolute;
+        left: 15em;
+        bottom: -171em;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/estilo.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../Images/logo1.png">
+    <title>Inscripción</title>
+</head>
+<body>
+
+    <header>
+        <img src="../Images/logo1.png" alt="Gym" class=logogym>
+        <h1>HIT FIT</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Principal</a></li>
+            <li><a href="../Portfolio/tienda.html">Tienda</a></li>
+            <li><a href="../Portfolio/inscripcion.html">Inscripción</a></li>
+            <li><a href="../Portfolio/contacto.html">Nosotros</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+    <form method="GET" action="procesainscripcion.php" class="inscrip">
+
+        <fieldset class="inscripcion">
+        <h2>Datos personales</h2>
+        <p>
+            <label for="nombre" class="ins">Nombre
+                <input type="text" name="nombre" required id="nombre" class="dato" >
+            </label>
+        </p>
+        <p>
+            <label for="apellidos" class="ins">Apellidos
+                <input type="text" name="apellidos" required id="apellidos" class="dato">
+            </label>
+        </p>
+        <p>
+            <label for="nacimiento" class="ins">Fecha de nacimiento
+                <input type="date" name="nacimiento" id="nacimiento" class="dato">
+            </label>
+        </p>
+        <p>
+            <label for="email" class="ins">Correo electrónico    
+                <input type="email" name="email" id="email" placeholder="example@example.com" class="dato">
+            </label>
+        </p>
+        <p>
+            <label for="dni" class="ins">DNI/NIF
+                <input type="text" name="dni" minlength="9" maxlength="9" id="dni" required class="dato">
+            </label>
+        </p>
+        </fieldset>
+
+        
+        <fieldset class="inscripcion">
+        <h2>Inscripción</h2>
+        <p>
+            <label for="clase" class="ins">Selecciona la clase a la que desea asistir
+                <select name="clase" id="clase">
+                    <option value="Yoga" selected>Yoga</option>
+                    <option value="Crossfit">Crossfit</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Spinning">Spinning</option>
+                    <option value="Halterofilia">Halterofilia</option>
+                </select>
+            </label>
+        </p>
+        <datalist id="listahorarios" class="ins">
+            <option value="Lunes 9:30 hrs">Lunes 9:30 hrs</option>
+            <option value="Lunes 19:00 hrs">Lunes 19:00 hrs</option>
+            <option value="Martes 10:00 hrs">Martes 10:00 hrs</option>
+            <option value="Martes 18:00 hrs">Martes 18:00 hrs</option>
+            <option value="Miércoles 9:00 hrs">Miércoles 9:00 hrs</option>
+            <option value="Miércoles 16:00 hrs">Miércoles 16:00 hrs</option>
+            <option value="Jueves 11:00 hrs">Jueves 11:00 hrs</option>
+            <option value="Jueves 20:00 hrs">Jueves 20:00 hrs</option>
+            <option value="Viernes 8:30 hrs">Viernes 8:30 hrs</option>
+            <option value="Viernes 21:00 hrs">Viernes 21:00 hrs</option>
+        </datalist>
+        <label id="prov" class="ins">Horarios</label>
+        <input type="text" name="horarios" id="horarios" list="listahorarios" class="dato"/>
+        <p>
+            <label for="comentarios" class="ins">Comentarios, críticas o sugerencias
+                <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+            </label>
+        </p>
+        <p>
+            <label for="marcador" class="ins">
+                <input type="checkbox" name="marcador" class="checkcopyright" id="marcador"> Deseo recibir información sobre novedades y ofertas
+            </label>
+        </p>
+        <div>
+            <input type="submit" value="Enviar" class="ins">
+            <input type="reset" value="Reiniciar" class="ins">
+        </div>
+        </fieldset>
+
+    </form>
+
+    <div class="video">
+        <iframe class="video" src="https://www.youtube.com/embed/rqTJrFY9BC0" title="YouTube video player"></iframe>
+    </div>
+
+    </section>
+
+    <footer id="inscripcion">
+        <address>
+        <a href="https://www.iesjuanbosco.es/">IES Juan Bosco</a>
+        <p>Avenida de los Castros, 75</p>
+        <p>HORARIO</p>
+        <p>Lunes a viernes de 7:00 a 22:00</p>
+        <p>Domingos y festivos cerrado</p>
+        </address>
+    </footer>
+
+    <button onclick="scrollWin()" style="position:fixed;bottom:20px;right:20px;height:68px;width:104px;"><img src="../Images/flecha.png" alt="flecha"></button>
+    <script>
+        function scrollWin(){
+            window.scrollTo(0, 0);
+        }
+    </script>
+    
+</body>
+</html>
